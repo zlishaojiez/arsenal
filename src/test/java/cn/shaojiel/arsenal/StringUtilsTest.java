@@ -1,4 +1,4 @@
-package cn.shaojiel.util;
+package cn.shaojiel.arsenal;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ public class StringUtilsTest {
     @Test
     @DisplayName("upperCaseFirst")
     void upperCaseFirst() {
-        String s = "abc";
+        final String s = "abc";
         assertEquals(StringUtils.upperCaseFirst_Better(s), StringUtils.upperCaseFirst(s));
     }
 }

@@ -1,4 +1,4 @@
-package cn.shaojiel.util;
+package cn.shaojiel.arsenal;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

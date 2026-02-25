@@ -1,4 +1,4 @@
-package cn.shaojiel.util;
+package cn.shaojiel.arsenal;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,16 +13,16 @@ public enum InheritableContext {
         }
     };
 
-    public <T> T get(String name) {
+    public <T> T get(final String name) {
         return (T) this.testContexts.get().get(name);
     }
 
-    public <T> T set(String name, T object) {
+    public <T> T set(final String name, final T object) {
         this.testContexts.get().put(name, object);
         return object;
     }
 
-    public <T> T get(String name, Class<T> classType) {
+    public <T> T get(final String name, final Class<T> classType) {
         return classType.cast(this.testContexts.get().get(name));
     }
 

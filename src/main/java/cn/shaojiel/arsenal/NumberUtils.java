@@ -1,4 +1,4 @@
-package cn.shaojiel.util;
+package cn.shaojiel.arsenal;
 
 public final class NumberUtils {
     private NumberUtils() {}
@@ -9,7 +9,7 @@ public final class NumberUtils {
      * @param i
      * @return
      */
-    public static boolean isOdd(int i) {
+    public static boolean isOdd(final int i) {
         return i % 2 != 0;
     }
 
@@ -19,7 +19,7 @@ public final class NumberUtils {
      * @param i
      * @return
      */
-    public static boolean isOdd_Better(int i) {
+    public static boolean isOdd_Better(final int i) {
         return (i & 1) != 0;
     }
 }

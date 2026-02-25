@@ -1,18 +1,18 @@
-package cn.shaojiel.util;
+package cn.shaojiel.arsenal;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class LRUCache<K, V> extends LinkedHashMap<K, V> {
-    private final int maxSize;
+    private static final long serialVersionUID=4890957578293224277L;private final int maxSize;
 
-    public LRUCache(int maxSize) {
+    public LRUCache(final int maxSize) {
         super(maxSize / 2, 0.75F, true);
         this.maxSize = maxSize;
     }
 
     @Override
-    protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+    protected boolean removeEldestEntry(final Map.Entry<K, V> eldest) {
         return this.size() > this.maxSize;
     }
 }
